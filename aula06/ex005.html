@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="300">
+    <title>Primeiros passos com DOM</title>
+    <style>
+        body{
+            background-color: #12df0b;
+            color:aliceblue;
+            font: normal 28pt Arial
+        }
+    </style>
+</head>
+<body>
+    <h1>Iniciando estudos DOM</h1>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar<strong> DOM</strong> em JavaSript.</p>
+    <div id = "msg">Clique aqui</div>
+    <script>
+            var corpo = window.document.body
+            var p1 = window.document.getElementsByTagName('p')[1]
+            window.document.write('Conteudo do paragrafo 1: '+p1.innerText)
+            p1.style.color = 'white'
+            corpo.style.background = 'blue' ;
+            var d =  window.document.getElementsById('mgs')
+            d.style.background = 'green'
+            d.innerText = 'Estou aguardando...'
+
+            var d = window.document.getElementsByName('msg')[0]
+            d.innerText = 'Olá ok'
+
+            var d = window.document.querySelector('div.#msg')
+
+
+            var numero1 = Number(window.prompt('Digite um número'));
+            var numero2 = Number(window.prompt("Digite outro número"))
+            var soma = numero1+numero2
+
+            window.alert('A soma é igual a '+soma)
+                            
+    </script>
+</body>
+</html>
