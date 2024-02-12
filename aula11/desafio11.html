@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio aula 11</title>
+</head>
+<body>
+    <h1>Desafio aula 11</h1>
+    <h2>
+        Você nasceu em qual país? <input type="text" name = "txtpais" id="txtpais" >
+        <input type ="button" value= "Verificar" onclick="verificar()" >
+    </h2>
+    <div id = "resposta">
+     
+    </div>
+     
+    <script>
+
+        function verificar(){
+            var txtpais = window.document.querySelector('input#txtpais')
+            var resposta = window.document.querySelector('div#resposta')
+            var pais = txtpais.value.toUpperCase()
+            resposta.innerHTML = `<p><strong>Você nasceu no ${pais}<\strong><\p>`
+
+                if(pais == 'BRASIL'){
+                    resposta.innerHTML += `<p><strong>Você é Brasileiro<\strong><\p>`
+
+                }else{
+                resposta.innerHTML +=`<p><strong>Você é Extrangeiro<\strong><\p>`
+                }
+        }
+    </script>
+</body>
+</html>
