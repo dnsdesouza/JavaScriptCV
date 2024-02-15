@@ -1,0 +1,56 @@
+body{
+    background: rgb(104, 7, 194);
+    font: normal 15pt Arial;
+}
+
+header{
+    color: blue;
+    text-align: center;
+}
+
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow:8px 8px 8px rgba(10, 10, 10, 100)
+}
+
+img{
+    border-radius: 76px;
+}
+div{
+    text-align: center; 
+    padding: 8px;
+  
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}body{
+    background: rgb(104, 7, 194);
+    font: normal 15pt Arial;
+}
+
+header{
+    color: white;
+    text-align: center;
+}
+
+section{
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+    margin: auto;
+    box-shadow:8px 8px 8px rgb(10, 10, 10)
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
