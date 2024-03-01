@@ -9,7 +9,37 @@ function verificar(){
     }else{
        var fsex = document.getElementsByName('radsex')
        var idade = ano - Number(fano.value)
-       res.innerHTML = `Idade calculada: ${idade}`
+       var genero = ''
+       var img = document.createElement('img')
+
+       img.setAttribute('id','foto')
+
+       if(fsex[0].checked){
+            genero = 'Homem'
+            if(idade > 0 && idade < 12){
+                img.setAttribute('src', 'menino.jpg')
+            }else if( idade < 21) {
+                img.setAttribute('src', 'homemJovem.jpg')
+            }else if(idade < 60) {
+                img.setAttribute('src', 'homemAdulto.jpg')
+            }else{
+                img.setAttribute('src', 'homemVelho.jpg')
+            }
+
+        } else if(fsex[1].checked){
+            genero = 'Mulher'
+            if(idade > 0 && idade < 12){
+                img.setAttribute('src', 'menina.jpg')
+            }else if( idade < 21) {
+                img.setAttribute('src', 'mulherjovem.jpg')
+            }else if(idade < 60) {
+                img.setAttribute('src', 'mulheradulta.jpg')
+            }else{
+                img.setAttribute('src', 'mulheridosa.jpg')
+            }
+        }
+        res.style.textAlign = 'center'
+        res.innerHTML = `Detectamos ${genero} ${idade} anos.<br>`
+        res.appendChild(img)
     }
-     
 }

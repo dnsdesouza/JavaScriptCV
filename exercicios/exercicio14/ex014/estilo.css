@@ -1,5 +1,5 @@
 body{
-    background: rgb(29, 194, 7);
+    background: rgb(104, 7, 194);
     font: normal 15pt Arial;
 }
                                         
@@ -21,7 +21,7 @@ img{
     border-radius: 76px;
 }
 div{
-    text-align: ; 
+    text-align: center; 
     padding: 8px;
   
 }
@@ -31,7 +31,7 @@ footer{
     text-align: center;
     font-style: italic;
 }body{
-    background: rgb(7, 194, 54);
+    background: rgb(104, 7, 194);
     font: normal 15pt Arial;
 }
 
